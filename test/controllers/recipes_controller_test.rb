@@ -4,6 +4,7 @@ require "test_helper"
 
 class RecipesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    binding.pry
     @recipe = recipes(:one)
   end
 
