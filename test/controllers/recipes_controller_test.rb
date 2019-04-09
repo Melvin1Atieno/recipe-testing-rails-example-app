@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class RecipesControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,8 +18,8 @@ class RecipesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create recipe" do
-    assert_difference('Recipe.count') do
-      post recipes_url, params: { recipe: { ingredients: @recipe.ingredients, method: @recipe.method, name: @recipe.name } }
+    assert_difference("Recipe.count") do
+      post recipes_url, params: { recipe: { ingredients: @recipe.ingredients, process: @recipe.method, name: @recipe.name } }
     end
 
     assert_redirected_to recipe_url(Recipe.last)
@@ -34,12 +36,12 @@ class RecipesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update recipe" do
-    patch recipe_url(@recipe), params: { recipe: { ingredients: @recipe.ingredients, method: @recipe.method, name: @recipe.name } }
+    patch recipe_url(@recipe), params: { recipe: { ingredients: @recipe.ingredients, process: @recipe.method, name: @recipe.name } }
     assert_redirected_to recipe_url(@recipe)
   end
 
   test "should destroy recipe" do
-    assert_difference('Recipe.count', -1) do
+    assert_difference("Recipe.count", -1) do
       delete recipe_url(@recipe)
     end
 
