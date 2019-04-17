@@ -48,6 +48,7 @@ group :development, :test do
   gem "faker"
   gem "guard"
   gem "guard-minitest"
+  gem "letter_opener"
   gem "rubocop-rails_config"
 end
 
