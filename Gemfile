@@ -41,17 +41,21 @@ gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "bullet"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "pry-byebug"
   gem "simplecov"
   gem "factory_bot_rails"
   gem "faker"
+  gem "ruby-growl"
   gem "guard"
   gem "guard-minitest"
   gem "letter_opener"
   gem "rubocop-rails_config"
   gem "vcr"
   gem "webmock"
+  gem "xmpp4r"
+
 end
 
 group :development do
