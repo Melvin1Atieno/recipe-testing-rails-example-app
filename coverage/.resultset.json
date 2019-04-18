@@ -38,7 +38,8 @@
       "/home/deploy/app/config/environments/development.rb": [
         1,
         null,
-        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -290,11 +291,10 @@
         1,
         1,
         0,
-        0,
         null,
         null
       ]
     },
-    "timestamp": 1555516562
+    "timestamp": 1555593686
   }
 }

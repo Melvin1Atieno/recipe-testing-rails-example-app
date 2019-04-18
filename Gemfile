@@ -50,6 +50,8 @@ group :development, :test do
   gem "guard-minitest"
   gem "letter_opener"
   gem "rubocop-rails_config"
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development do
